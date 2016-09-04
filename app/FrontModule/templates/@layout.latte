@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1">
+
+		<title>Voonne web project</title>
+	</head>
+
+	<body>
+		<div n:foreach="$flashes as $flash" class="alert alert-{$flash->type}" role="alert">
+			{_$flash->message}
+		</div>
+
+		{include content}
+	</body>
+</html>
