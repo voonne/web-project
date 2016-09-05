@@ -26,4 +26,10 @@ $ composer create-project voonne/web-project app
 $ php www/index.php orm:schema-tool:create
 ```
 
+* Install platform using Voonne install command:
+
+```sh
+$ php www/index.php voonne:install <domain> <language ISO 639-1 code>
+```
+
 * Enjoy!
