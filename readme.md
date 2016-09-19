@@ -15,10 +15,10 @@ Installation
 * In first place download web project by [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer create-project voonne/web-project app
+$ composer create-project voonne/web-project app --stability=dev
 ```
 
-* And now check whether /log and /temp folders writable for your web server (Apache etc.).
+* And now check whether /log, /storage and /temp folders writable for your web server (Apache etc.).
 * Create app/config/config.local.neon copying a file app/config/config.local.template.neon and adjusting parameters.
 * Create a database schema using Doctrine create command:
 

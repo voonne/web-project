@@ -28,6 +28,10 @@ translation:
 	whitelist: [cs, en]
 
 
+voonne:
+	storageProvider: Voonne\Storage\Adapters\FileSystemAdapter(%appDir%/../storage)
+
+
 extensions:
 	annotations: Kdyby\Annotations\DI\AnnotationsExtension
 	autowired: Kdyby\Autowired\DI\AutowiredExtension

@@ -22,6 +22,16 @@
 		"kdyby/autowired": "@dev",
 		"kdyby/doctrine": "~3.1",
 		"kdyby/translation": "~2.3",
+		"voonne/assets": "@dev",
+		"voonne/controls": "@dev",
+		"voonne/forms": "@dev",
+		"voonne/layouts": "@dev",
+		"voonne/messages": "@dev",
+		"voonne/model": "@dev",
+		"voonne/pages": "@dev",
+		"voonne/panels": "@dev",
+		"voonne/security": "@dev",
+		"voonne/storage": "@dev",
 		"voonne/voonne": "@dev"
 	}
 }
