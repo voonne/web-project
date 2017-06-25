@@ -19,7 +19,7 @@ composer create-project voonne/web-project app --stability=dev
 ```
 
 * And now check whether `/log`, `/storage` and `/temp` folders writable for your web server (Apache etc.).
-* Create _app/config/config.local.neon_ copying a file `app/config/config.local.template.neon` and adjusting parameters.
+* Create `app/config/config.local.neon` copying a file `app/config/config.local.template.neon` and adjusting parameters.
 * In `services` section of config file `app/config/config.neon` adjust domain name and used languages.
 * Create a database schema using Doctrine create command:
 
