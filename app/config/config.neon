@@ -17,6 +17,11 @@ session:
 services:
 	router: App\Router\RouterFactory::createRouter
 
+	voonne.domainManager:
+		setup:
+			- addDomain('example.com')
+			- addDomainLanguage('example.com', 'en')
+
 
 doctrine:
 	metadata:
@@ -29,7 +34,7 @@ translation:
 
 
 voonne:
-	storageProvider: Voonne\Storage\Adapters\FileSystemAdapter(%appDir%/../storage)
+	storageAdapter: Voonne\Storage\Adapters\FileSystemAdapter(%appDir%/../storage)
 
 
 extensions:
@@ -40,3 +45,5 @@ extensions:
 	events: Kdyby\Events\DI\EventsExtension
 	translation: Kdyby\Translation\DI\TranslationExtension
 	voonne: Voonne\Voonne\DI\VoonneExtension
+	usersModule: Voonne\UsersModule\DI\UsersExtension
+	rolesModule: Voonne\RolesModule\DI\RolesExtension
